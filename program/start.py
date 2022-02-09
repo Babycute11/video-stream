@@ -120,7 +120,7 @@ async def alive(c: Client, message: Message):
 
     await c.send_photo(
         chat_id,
-        photo=f"{ALIVE_IMAGE}",
+        photo=f"{ALIVE_IMG}",
         caption=alive,
         reply_markup=keyboard,
     )
