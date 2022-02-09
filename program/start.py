@@ -79,15 +79,15 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 × Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ×", url=f"https://t.me/{GROUP_SUPPORT}"
+                        " × Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ×", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 × Mᴀɪɴ ʙᴏᴛ ×", url=f"https://t.me/ichigoxsinbot"
+                        " × Mᴀɪɴ ʙᴏᴛ ×", url=f"https://t.me/ichigoxsinbot"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 × Nᴇᴛᴡᴏʀᴋ ×", url="https://t.me/aboutastaXbonten"
+                        " × Nᴇᴛᴡᴏʀᴋ ×", url="https://t.me/aboutastaXbonten"
                     )
                 ],
             ]
@@ -97,7 +97,7 @@ async def start_(client: Client, message: Message):
 
 
 @Client.on_message(
-    command(["alive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["malive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 async def alive(c: Client, message: Message):
     chat_id = message.chat.id
@@ -110,13 +110,13 @@ async def alive(c: Client, message: Message):
             [
                 InlineKeyboardButton("× Gʀᴏᴜᴘ ×", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 × Cʜᴀɴɴᴇʟ ×", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    " × Cʜᴀɴɴᴇʟ ×", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n🧑🏼‍💻 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n👾 Bot Version: `v{__version__}`\n🔥 Pyrogram Version: `{pyrover}`\n🐍 Python Version: `{__python_version__}`\n✨ PyTgCalls Version: `{pytover.__version__}`\n🆙 Uptime Status: `{uptime}`\n\n❤ **Thanks for Adding me here, for playing video & music on your Group's video chat**"
+    alive = f"**Hᴇʟʟᴏ {message.from_user.mention()}, ɪ'ᴍ {BOT_NAME}**\n\ ღ  Mʏ ᴄᴀʀᴇᴛᴀᴋᴇʀ: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n ღ  Bᴏᴛ Vᴇʀsɪᴏɴ: `v{__version__}`\n ღ  Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ: `{pyrover}`\n ღ  Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ: `{__python_version__}`\n ღ  PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ: `{pytover.__version__}`\n ღ  Uᴘᴛɪᴍᴇ Sᴛᴀᴛᴜs: `{uptime}`\n\n ღ **ᴜsᴇ ᴍᴇ ʜᴇʀᴇ ғᴏʀ ᴘʟᴀʏɪɴɢ sᴏɴɢs ᴀɴᴅ ᴠɪᴅᴇᴏs...ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ ᴛɪᴍᴇ !**"
 
     await c.send_photo(
         chat_id,
@@ -175,8 +175,8 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton(" Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton(" Support", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
                             InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
