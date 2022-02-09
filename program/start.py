@@ -116,7 +116,7 @@ async def alive(c: Client, message: Message):
         ]
     )
 
-    alive = f"**Hᴇʟʟᴏ {message.from_user.mention()}, ɪ'ᴍ {BOT_NAME}**\n\ ღ  Mʏ ᴄᴀʀᴇᴛᴀᴋᴇʀ: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n ღ  Bᴏᴛ Vᴇʀsɪᴏɴ: `v{__version__}`\n ღ  Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ: `{pyrover}`\n ღ  Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ: `{__python_version__}`\n ღ  PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ: `{pytover.__version__}`\n ღ  Uᴘᴛɪᴍᴇ Sᴛᴀᴛᴜs: `{uptime}`\n\n ღ **ᴜsᴇ ᴍᴇ ʜᴇʀᴇ ғᴏʀ ᴘʟᴀʏɪɴɢ sᴏɴɢs ᴀɴᴅ ᴠɪᴅᴇᴏs...ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ ᴛɪᴍᴇ !**"
+    alive = f"**Hᴇʟʟᴏ {message.from_user.mention()}, ɪ'ᴍ {BOT_NAME}**\n ღ  Mʏ ᴄᴀʀᴇᴛᴀᴋᴇʀ: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n ღ  Bᴏᴛ Vᴇʀsɪᴏɴ: `v{__version__}`\n ღ  Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ: `{pyrover}`\n ღ  Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ: `{__python_version__}`\n ღ  PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ: `{pytover.__version__}`\n ღ  Uᴘᴛɪᴍᴇ Sᴛᴀᴛᴜs: `{uptime}`\n\n ღ **ᴜsᴇ ᴍᴇ ʜᴇʀᴇ ғᴏʀ ᴘʟᴀʏɪɴɢ sᴏɴɢs ᴀɴᴅ ᴠɪᴅᴇᴏs...ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ ᴛɪᴍᴇ !**"
 
     await c.send_photo(
         chat_id,
