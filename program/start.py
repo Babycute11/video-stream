@@ -169,17 +169,17 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "❤️ Thanks for adding me to the **Group** !\n\n"
-                "Appoint me as administrator in the **Group**, otherwise I will not be able to work properly, and don't forget to type `/userbotjoin` for invite the assistant.\n\n"
-                "Once done, then type `/reload`",
+                "× 𝙶𝚛𝚘𝚞𝚙 𝚗𝚊𝚖𝚎 **Group** !\n\n"
+                "× 𝙾𝚒 𝚘𝚒 𝚘𝚒 𝚋𝚊𝚔𝚊 𝙸'𝚖 𝚑𝚎𝚛𝚎 𝚝𝚘 𝚑𝚎𝚕𝚙 𝚢𝚘𝚞 !, × 𝙷𝚒𝚝 /help  𝚝𝚘 𝚜𝚎𝚎 𝚖𝚢 𝚊𝚋𝚒𝚕𝚒𝚝𝚒𝚎𝚜.\n\n"
+                "× 𝚄𝚜𝚎 /start 𝚝𝚘 𝚌𝚑𝚎𝚌𝚔 𝚠𝚑𝚎𝚝𝚑𝚎𝚛 𝙸'𝚖 𝚘𝚗𝚕𝚒𝚗𝚎 𝚘𝚛 𝚗𝚘𝚝",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(" Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton(" Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("× Dᴀʀʟɪɴɢ ×", url=f"https://t.me/ichigo_updates"),
+                            InlineKeyboardButton(" ×  sᴜᴘᴘᴏʀᴛ × ", url=f"https://t.me/ichigosupportchat")
                         ],
                         [
-                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("× ᴏᴛ ×", url=f"https://t.me/delusionera")
                         ]
                     ]
                 )
